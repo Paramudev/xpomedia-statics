@@ -1,31 +1,26 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import "bootstrap/dist/js/bootstrap.bundle.min.js"; // Import Bootstrap JS
+import logo from "../assets/imgs/Navberimg/logo.jpg";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
       <div className="container-fluid">
-        {/* Logo */}
-        <Link className="navbar-brand" to="/">
-          <img
-            src={logo}
-            alt="Xpo Media Logo"
-            style={{ height: "40px" }} // Adjust logo size as needed
-          />
-          <span className="ms-2">
-            Xpo Media
-            <br />
-            Empowering Mind
-          </span>
-        </Link>
+        {/* Logo Section */}
+        <a className="navbar-brand d-flex align-items-center" href="#">
+          <img src={logo} style={{width:"76.5px", height:"76.5px"}} className="me-2" height="50" alt="Logo" />
+          <div className="ms-2 ps-lg-3">
+            <h1 className="h5 logo_lettle mb-0">Xpo Media</h1>
+            <p className=" logo_small small text-muted">Empowering Mind</p>
+          </div>
+        </a>
 
-        {/* Toggler for mobile view */}
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
+        {/* Navbar Toggle Button */}
+        <button 
+          className="navbar-toggler" 
+          type="button" 
+          data-bs-toggle="collapse" 
           data-bs-target="#navbarNav"
           aria-controls="navbarNav"
           aria-expanded="false"
@@ -34,58 +29,22 @@ const Navbar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        {/* Navigation links */}
-        <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
-          <ul className="navbar-nav">
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/" exact>
-                Home
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/about-us">
-                About Us
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/module-features">
-                Module Features
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/pricing">
-                Pricing
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/clients">
-                Clients
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/blog">
-                Blog
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/demo">
-                Demo
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/contact-us">
-                Contact Us
-              </NavLink>
-            </li>
+        {/* Navigation Links */}
+        <div className="collapse navbar-collapse justify-content-center text-center" id="navbarNav">
+          <ul className="navbar-nav mb-2 mb-lg-0 gap-lg-5">
+            <li className="nav-item"><a className="nav-link" href="#">Home</a></li>
+            <li className="nav-item"><a className="nav-link active text-dark" href="#">About Us</a></li>
+            <li className="nav-item"><a className="nav-link" href="#about">Module Features</a></li>
+            <li className="nav-item"><a className="nav-link" href="#">Pricing</a></li>
+            <li className="nav-item"><a className="nav-link" href="#">Clients</a></li>
+            <li className="nav-item"><a className="nav-link" href="#">Blog</a></li>
+            <li className="nav-item"><a className="nav-link" href="#">Demo</a></li>
+            <li className="nav-item"><a className="nav-link" href="#">Contact Us</a></li>
           </ul>
         </div>
 
-        {/* Enquiry Now Button */}
-        <div className="d-flex">
-          <Link to="/enquiry" className="btn btn-enquiry">
-            Enquiry Now
-          </Link>
-        </div>
+        {/* Enquiry Button */}
+        <a href="#" className="btn nav_btn rounded-pill ms-3 d-none d-lg-block">Enquiry Now</a>
       </div>
     </nav>
   );
