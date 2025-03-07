@@ -1,0 +1,146 @@
+/* 
+.cards-container::-webkit-scrollbar {
+  display: none;
+
+}
+
+.card-section {
+  margin-bottom: 20px;
+  position: relative;
+  width: 100%;
+  overflow: visible;
+
+}
+
+.scroll-arrow {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.custom-card {
+  background-color: #f0f4ff;
+
+}
+
+
+.see-more-link {
+  text-decoration: none !important;
+}
+
+
+.cards-container {
+  width: 100%;
+  position: relative;
+}
+
+
+.card-section {
+  padding: 0 50px;
+
+}
+
+.text-dark-blue {
+  color: #1e3a8a;
+ 
+}
+
+.text-black {
+  color: #000;
+
+}
+
+.text-gray {
+  color: #4b5e8e;
+
+}
+
+.school_logo {
+  width: 1236.151611328125px;
+  height: 103.75px;
+  top: 104.87px;
+  margin-left: -40px;
+  gap: 80px;
+
+}
+
+.Management_para{
+  width: 710;
+  height: 360;
+  top: 1723px;
+  left: 100px;
+  font-family: Kumbh Sans;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 40px;
+  letter-spacing: 0%;
+  text-align: justify;
+  color: rgba(0, 0, 0, 0.5);
+    
+}
+
+.second_card{
+  width: 219.858154296875px;
+height: 219.858154296875px;
+border-radius: 7.04px;
+
+}
+
+
+
+
+ */
+
+
+
+
+
+
+
+/* =========================================== */
+
+/* Home.css */
+.text-dark-blue {
+  color: #1e3a8a;
+}
+
+.text-gray {
+  color: #4b5e8e;
+}
+
+.btn-dark {
+  background-color: #1e3a8a;
+  border-color: #1e3a8a;
+}
+
+.cards-container {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on mobile */
+}
+
+.cards-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar */
+}
+
+.custom-card {
+  width: 300px;
+}
+
+@media (max-width: 768px) {
+  .custom-card {
+    width: 250px;
+  }
+}
+
+@media (max-width: 576px) {
+  .custom-card {
+    width: 200px;
+  }
+}
+
+.scroll-arrow {
+  z-index: 10;
+}

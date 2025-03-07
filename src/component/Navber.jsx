@@ -1,7 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js"; // Import Bootstrap JS
-import logo from "../assets/imgs/Navberimg/logo.jpg";
+import logo from "../assets/imgs/Navberimg/logo2.png";
 
 const Navbar = () => {
   return (
@@ -9,11 +9,8 @@ const Navbar = () => {
       <div className="container-fluid">
         {/* Logo Section */}
         <a className="navbar-brand d-flex align-items-center" href="#">
-          <img src={logo} style={{width:"76.5px", height:"76.5px"}} className="me-2" height="50" alt="Logo" />
-          <div className="ms-2 ps-lg-3">
-            <h1 className="h5 logo_lettle mb-0">Xpo Media</h1>
-            <p className=" logo_small small text-muted">Empowering Mind</p>
-          </div>
+          <img src={logo}  className="mx-2" height="70" alt="Logo" />
+
         </a>
 
         {/* Navbar Toggle Button */}
