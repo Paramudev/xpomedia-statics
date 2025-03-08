@@ -1,6 +1,18 @@
-/* 
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
 .cards-container::-webkit-scrollbar {
   display: none;
+
+}
+
+
+
+.hero_heading {
+  background: linear-gradient(180deg, #D9D9D9 0%, #FFFFFF 100%);
+  box-shadow: 0px 0px 40px 0px #00000080 inset;
 
 }
 
@@ -45,7 +57,7 @@
 
 .text-dark-blue {
   color: #1e3a8a;
- 
+
 }
 
 .text-black {
@@ -60,14 +72,20 @@
 
 .school_logo {
   width: 1236.151611328125px;
-  height: 103.75px;
-  top: 104.87px;
+  height: 123.75px;
+  top: 124.87px;
   margin-left: -40px;
   gap: 80px;
 
+
 }
 
-.Management_para{
+.seconts_cards {
+  background: #0B3D7B;
+
+}
+
+.Management_para {
   width: 710;
   height: 360;
   top: 1723px;
@@ -79,20 +97,20 @@
   letter-spacing: 0%;
   text-align: justify;
   color: rgba(0, 0, 0, 0.5);
-    
+
 }
 
-.second_card{
+.second_card {
   width: 219.858154296875px;
-height: 219.858154296875px;
-border-radius: 7.04px;
+  height: 219.858154296875px;
+  border-radius: 7.04px;
 
 }
 
 
 
 
- */
+
 
 
 
@@ -118,11 +136,13 @@ border-radius: 7.04px;
 
 .cards-container {
   overflow-x: auto;
-  -webkit-overflow-scrolling: touch; /* Smooth scrolling on mobile */
+  -webkit-overflow-scrolling: touch;
+  /* Smooth scrolling on mobile */
 }
 
 .cards-container::-webkit-scrollbar {
-  display: none; /* Hide scrollbar */
+  display: none;
+  /* Hide scrollbar */
 }
 
 .custom-card {
@@ -144,3 +164,78 @@ border-radius: 7.04px;
 .scroll-arrow {
   z-index: 10;
 }
+
+
+/* Software */
+
+
+.Software_para {
+  width: 400px;
+  height: 88px;
+  font-family: Kumbh Sans;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 1px;
+  color: rgba(0, 0, 0, 0.5);
+
+}
+
+
+
+.Upgrade_img{
+  width: 604px;
+height: 1115px;
+top: 4326px;
+left: 736px;
+border-radius: 10px;
+
+}
+
+.Upgrade input,select{
+  width: 544px !important;
+height: 60px;
+left: 544px;
+border-radius: 8px;
+background: rgba(255, 255, 255, 1);
+box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.4);
+
+
+}
+.rightbtn{
+  width: 10.px !important;
+height: 17.77777862548828px !important;
+top: 8.11px;
+left: 7.55px;
+
+}
+
+.Upgrad{
+  width: 255px;
+  height: 62px;
+  top: 1023px;
+  left: 175px;
+  gap: 10px;
+  color: white !important;
+  border-width: 2px;
+  border-radius: 110px !important;
+  padding-top: 14px;
+  padding-right: 80px;
+  padding-bottom: 14px;
+  padding-left: 80px;
+  margin-left: 140px;
+  
+background: linear-gradient(180deg, #0B3D7B 0%, #1470E1 100%);
+border: 2px solid rgba(11, 61, 123, 1)
+
+}
+
+
+.Media{
+  width: 644px !important;
+height: auto;
+top: 4326px;
+
+
+}
+
