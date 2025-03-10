@@ -19,11 +19,11 @@ const Footer = () => {
       
       <div class="col-md-3 ps-5 lh-base  my-5">
         <h5 class="text-white">Contact Information</h5>
-        <p><i class="fas fa-map-marker-alt "></i> 📍151/23, Thirumanjana Gopura 
+        <p> 📍151/23, Thirumanjana Gopura 
 Street, (Opp) Kamarajar Statue,
 Tiruvannamalai - 606601.</p>
-        <p><i class="fas fa-envelope"></i>📧 govindanmcas@gmail.com</p>
-        <p><i class="fas fa-phone"></i> 📞 8220839239</p>
+        <p>📧 govindanmcas@gmail.com</p>
+        <p> 📞 8220839239</p>
         <div class="d-flex  gap-2">
           <a href="#" class="text-white fs-5"><img style={{width:"30px"}} src={linkdin} alt="" /></a>
           <a href="#" class="text-white fs-5"><i class="fab fa-instagram"></i></a>
