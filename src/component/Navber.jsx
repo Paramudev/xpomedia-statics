@@ -1,7 +1,8 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min.js"; // Import Bootstrap JS
+import "bootstrap/dist/js/bootstrap.bundle.min.js"; 
 import logo from "../assets/imgs/Navberimg/logo2.png";
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
@@ -29,14 +30,14 @@ const Navbar = () => {
         {/* Navigation Links */}
         <div className="collapse navbar-collapse justify-content-center text-center" id="navbarNav">
           <ul className="navbar-nav mb-2 mb-lg-0 gap-lg-5">
-            <li className="nav-item"><a className="nav-link" href="#">Home</a></li>
-            <li className="nav-item"><a className="nav-link active text-dark" href="#">About Us</a></li>
-            <li className="nav-item"><a className="nav-link" href="#about">Module Features</a></li>
-            <li className="nav-item"><a className="nav-link" href="#">Pricing</a></li>
-            <li className="nav-item"><a className="nav-link" href="#">Clients</a></li>
-            <li className="nav-item"><a className="nav-link" href="#">Blog</a></li>
-            <li className="nav-item"><a className="nav-link" href="#">Demo</a></li>
-            <li className="nav-item"><a className="nav-link" href="#">Contact Us</a></li>
+            <li className="nav-item"><Link className="nav-link" to={"/"}>Home</Link></li>
+            <li className="nav-item"><Link className="nav-link " to={'/AboutUs'} >About Us</Link></li>
+            <li className="nav-item"><Link className="nav-link" to={'/ModuleFeatures'}>Module Features</Link></li>
+            <li className="nav-item"><Link className="nav-link" to={'/AboutUs'}>Pricing</Link></li>
+            <li className="nav-item"><Link className="nav-link" to={'/AboutUs'}>Clients</Link></li>
+            <li className="nav-item"><Link className="nav-link" to={'/AboutUs'}>Blog</Link></li>
+            <li className="nav-item"><Link className="nav-link" to={'/AboutUs'}>Demo</Link></li>
+            <li className="nav-item"><Link className="nav-link"to={'/AboutUs'}>Contact Us</Link></li>
           </ul>
         </div>
 
