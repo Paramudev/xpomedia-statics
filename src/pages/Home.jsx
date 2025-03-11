@@ -306,9 +306,11 @@ const Home = () => {
                 Q{index + 1} {faq.question}{" "}
                 <span className="float-end">
                   {activeIndex === index ? (
-                    <img src={minus || "/placeholder.svg"} alt="" style={{ width: "40px" }} />
+                    // <img src={minus || "/placeholder.svg"} alt="" style={{ width: "40px" }} />
+                    <i class="fa-solid fa-caret-up " style={{fontSize: "30px" }}></i>
                   ) : (
-                    <img src={plus || "/placeholder.svg"} alt="" style={{ width: "40px" }} />
+                    // <img src={plus || "/placeholder.svg"} alt="" style={{ width: "40px" }} />
+                    <i class="fa-solid fa-caret-down" style={{fontSize: "30px" }}></i>
                   )}
                 </span>
               </h5>

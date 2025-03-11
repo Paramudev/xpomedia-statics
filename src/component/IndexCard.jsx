@@ -1,6 +1,8 @@
   "use client"
 
   import { useState, useEffect } from "react"
+  import AOS from "aos";
+
 
   import Administration1 from "../assets/imgs/Homeimg/cards_img/1.png"
   import Administration2 from "../assets/imgs/Homeimg/cards_img/2.png"
@@ -373,12 +375,14 @@
 
         {/* Cards Container */}
         <div className="container position-relative">
-          <div
+          <div 
             className={`${isMobile ? "d-flex flex-nowrap overflow-auto" : "row g-4"}`}
+            
             style={isMobile ? { scrollSnapType: "x mandatory" } : {}}
           >
             {visibleCards.map((card) => (
               <div
+      
                 key={card.id}
                 className={isMobile ? "col-12 px-2 mb-4" : "col-md-6 col-lg-3"}
                 style={isMobile ? { flexShrink: 0, scrollSnapAlign: "start", minWidth: "100%" } : {}}
@@ -387,7 +391,7 @@
                   className="card h-100 shadow-sm"
                   style={{ backgroundColor: "#EFF6FF", borderRadius: "10px", border: "none" }}
                 >
-                  <div className="card-body text-center p-4">
+                  <div  className="card-body text-center p-4">
                     <div className="mb-3 d-flex justify-content-center">
                       <img
                         src={card.icon || "/placeholder.svg"}
