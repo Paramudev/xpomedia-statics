@@ -34,6 +34,26 @@
     color: rgba(0, 0, 0, 0.5);
 
 }
+.Mission li{
+    font-family: Kumbh Sans;
+font-weight: 500;
+font-size: 18px;
+line-height: 30px;
+letter-spacing: 0%;
+text-align: justify;
+color: #00000080;
+
+}
+.Vision li{
+    font-family: Kumbh Sans;
+font-weight: 500;
+font-size: 18px;
+line-height: 30px;
+letter-spacing: 0%;
+text-align: justify;
+color: #00000080;
+
+}
 
 .Xpo_Media strong {
     font-family: Kumbh Sans;

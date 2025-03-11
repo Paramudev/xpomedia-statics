@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import img1 from "../assets/imgs/Aboutimg/1.png"
 import img2 from "../assets/imgs/Aboutimg/Group.png"
 import img3 from "../assets/imgs/Aboutimg/3.png"
+import light from "../assets/imgs/Aboutimg/light.png"
 
 
 const AboutUs = () => {
@@ -70,25 +71,25 @@ const AboutUs = () => {
 
 
 
-      <Container className="py-5">
+      <Container className="py-5 Mission ">
         <Row className="align-items-center">
           <Col md={6}>
             <h2 className="fw-bold">Mission</h2>
             <ul className="list-unstyled mt-3">
               <li className="d-flex align-items-start mb-2">
-                <span className="me-2">💡</span> To empower educational institutions with smart, cloud-based automation.
+                <span className="me-2"><img src={light} alt="" style={{width:"25px"}} /></span> To empower educational institutions with smart, cloud-based automation.
               </li>
               <li className="d-flex align-items-start mb-2">
-                <span className="me-2">💡</span> To simplify and streamline school management through innovative technology.
+                <span className="me-2"><img src={light} alt="" style={{width:"25px"}} /></span> To simplify and streamline school management through innovative technology.
               </li>
               <li className="d-flex align-items-start mb-2">
-                <span className="me-2">💡</span> To enhance efficiency, reduce manual work, and improve overall administration.
+                <span className="me-2"><img src={light} alt="" style={{width:"25px"}} /></span> To enhance efficiency, reduce manual work, and improve overall administration.
               </li>
               <li className="d-flex align-items-start mb-2">
-                <span className="me-2">💡</span> To provide seamless communication between schools, parents, and students.
+                <span className="me-2"><img src={light} alt="" style={{width:"25px"}} /></span> To provide seamless communication between schools, parents, and students.
               </li>
               <li className="d-flex align-items-start mb-2">
-                <span className="me-2">💡</span> To ensure secure, data-driven decision-making for better education management.
+                <span className="me-2"><img src={light} alt="" style={{width:"25px"}} /></span> To ensure secure, data-driven decision-making for better education management.
               </li>
             </ul>
           </Col>
@@ -106,7 +107,7 @@ const AboutUs = () => {
       {/* Vision */}
 
 
-      <Container className="py-5">
+      <Container className="py-5 Vision ">
         <Row className="align-items-center">
           <Col md={6} className="text-center">
             <img
@@ -120,19 +121,19 @@ const AboutUs = () => {
             <h2 className="fw-bold">Vision</h2>
             <ul className="list-unstyled mt-3">
               <li className="d-flex align-items-start mb-2">
-                <span className="me-2">💡</span> To be the most trusted and preferred School ERP solution worldwide.
+                <span className="me-2"><img src={light} alt="" style={{width:"25px"}} /></span> To be the most trusted and preferred School ERP solution worldwide.
               </li>
               <li className="d-flex align-items-start mb-2">
-                <span className="me-2">💡</span> To revolutionize educational administration with advanced digital tools.
+                <span className="me-2"><img src={light} alt="" style={{width:"25px"}} /></span> To revolutionize educational administration with advanced digital tools.
               </li>
               <li className="d-flex align-items-start mb-2">
-                <span className="me-2">💡</span>To create a future where schools operate effortlessly through automation.
+                <span className="me-2"><img src={light} alt="" style={{width:"25px"}} /></span>To create a future where schools operate effortlessly through automation.
               </li>
               <li className="d-flex align-items-start mb-2">
-                <span className="me-2">💡</span>To support institutions in achieving excellence with real-time insights and efficiency.
+                <span className="me-2"><img src={light} alt="" style={{width:"25px"}} /></span>To support institutions in achieving excellence with real-time insights and efficiency.
               </li>
               <li className="d-flex align-items-start mb-2">
-                <span className="me-2">💡</span>  To continuously innovate and evolve with the changing needs of education.
+                <span className="me-2"><img src={light} alt="" style={{width:"25px"}} /></span>  To continuously innovate and evolve with the changing needs of education.
               </li>
             </ul>
           </Col>
