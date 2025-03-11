@@ -241,12 +241,12 @@ const ModuleFeatures = () => {
     return (
         <div className="ModuleFeatures">
             {/* Hero Section */}
-            <div className="container-fluid ModuleFeatures_hero mb-4 text-center py-3">
+            <div className="container-fluid ModuleFeatures_hero mb-4 text-center py-3 pt-4">
                 <div className="container">
                     <h3 className="fw-bold text-md-center text-lg-center" style={{ color: "rgba(11, 61, 123, 1)", fontSize: "2rem" }}>
                         All-in-One Solution for Effortless School Administration!
                     </h3>
-                    <p className="text-secondary mx-auto" style={{ maxWidth: "800px", fontSize: "1rem", lineHeight: "1.6" }}>
+                    <p className="text-secondary mx-auto pb-0" style={{ maxWidth: "800px",  lineHeight: "1.6" }}>
                         "Simplify school operations with powerful modules for admissions, attendance, fees, transport, and more."
                     </p>
                 </div>
