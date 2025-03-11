@@ -15,17 +15,26 @@ import logo11 from "../assets/imgs/Homeimg/logos/11.png";
 import logo12 from "../assets/imgs/Homeimg/logos/12.png";
 import logo13 from "../assets/imgs/Homeimg/logos/13.png";
 import logo14 from "../assets/imgs/Homeimg/logos/14.png";
+
+
 import Bcard1 from "../assets/imgs/Homeimg/Frame 30620 (1).png";
 import Bcard2 from "../assets/imgs/Homeimg/Frame 30626.png";
 import Bcard3 from "../assets/imgs/Homeimg/Frame 30628.png";
 import Bcard4 from "../assets/imgs/Homeimg/Frame 30625.png";
+
+
 import Software1 from "../assets/imgs/Homeimg/New folder/1.png";
 import Software2 from "../assets/imgs/Homeimg/New folder/2.png";
 import Software3 from "../assets/imgs/Homeimg/New folder/3.png";
 import Software4 from "../assets/imgs/Homeimg/New folder/4.png";
 import Software5 from "../assets/imgs/Homeimg/New folder/5.png";
+
 import Upgrade from "../assets/imgs/Homeimg/gril.jpeg";
 import standent from "../assets/imgs/Homeimg/logos/stundent.png";
+
+import minus from "../assets/imgs/Homeimg/mines.png"
+import plus from "../assets/imgs/Homeimg/plus.png"
+
 import { width } from '@fortawesome/free-solid-svg-icons/fa0';
 
 const Home = () => {
@@ -187,10 +196,11 @@ const Home = () => {
         {faqs.map((faq, index) => (
           <div key={index} className="mb-3">
             <div className="card-header border-bottom py-3" onClick={() => toggleFAQ(index)} style={{ cursor: 'pointer' }}>
-              <h5>Q{index + 1} {faq.question} <span className="float-end">{activeIndex === index ? '-' : '+'}</span></h5>
+              <h5>Q{index + 1} {faq.question} <span className="float-end">{activeIndex === index ?  <img src={minus} alt="" style={{width:"40px"}} / > : <img src={plus} alt="" style={{width:"40px"}}  />}</span></h5>
             </div>
             {activeIndex === index && <div className="card-body">{faq.answer}</div>}
           </div>
+         
         ))}
       </div>
 
