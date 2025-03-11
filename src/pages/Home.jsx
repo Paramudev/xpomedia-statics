@@ -35,7 +35,7 @@ import standent from "../assets/imgs/Homeimg/logos/stundent.png"
 import minus from "../assets/imgs/Homeimg/mines.png"
 import plus from "../assets/imgs/Homeimg/plus.png"
 
-import IndexCard from "../component/IndexCard"
+import IndexCard from "../component/HomeCard"
 
 const Home = () => {
   const [activeTab, setActiveTab] = useState("Administration")
