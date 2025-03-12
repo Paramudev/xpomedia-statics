@@ -1,5 +1,7 @@
 "use client"
 
+import AOS from "aos";
+
 import { useEffect, useRef, useState } from "react"
 import "../pages/Home.css"
 import heroimg from "../assets/imgs/Homeimg/hero.png"
@@ -35,9 +37,24 @@ import standent from "../assets/imgs/Homeimg/logos/stundent.png"
 import minus from "../assets/imgs/Homeimg/mines.png"
 import plus from "../assets/imgs/Homeimg/plus.png"
 
+
+
 import IndexCard from "../component/HomeCard"
 
+
+
+
+
+
+
+
 const Home = () => {
+
+
+  AOS.init({
+    duration: 1000, // Animation duration in milliseconds
+    once: true, // Whether animation should happen only once
+  })
   const [activeTab, setActiveTab] = useState("Administration")
   const logos = [logo1, logo2, logo3, logo4, logo5, logo6, logo7, logo8, logo9, logo10, logo11, logo12, logo13, logo14]
   const scrollRef = useRef(null)
@@ -144,6 +161,8 @@ const Home = () => {
     }
   }, [activeTab])
 
+
+
   const [formData, setFormData] = useState({
     role: "",
     fullName: "",
@@ -163,13 +182,15 @@ const Home = () => {
     console.log("Form submitted:", formData)
   }
 
+
+
   return (
     <div className="home-container">
       {/* Hero Section */}
       <section className="hero_heading d-flex align-items-center py-4 py-md-5">
         <div className="container">
           <div className="row align-items-center flex-column-reverse flex-md-row">
-            <div className="col-12 col-md-6 text-center text-md-start mb-4 mb-md-0">
+            <div data-aos="fade-down" data-aos-duration="3000" className="col-12 col-md-6 text-center text-md-start mb-4 mb-md-0">
               <h1 className="fw-bold text-dark-blue display-5 display-md-4">Smart School ERP for</h1>
               <h2 className="fw-bold text-black display-5 display-md-4">Smarter Management!</h2>
               <p className="text-gray fs-5">Automate, Streamline & Simplify School Operations!</p>
@@ -178,7 +199,7 @@ const Home = () => {
               </a>
             </div>
             <div className="col-12 col-md-6 text-center">
-              <img src={heroimg || "/placeholder.svg"} alt="School Management" className="img-fluid" />
+              <img data-aos="fade-down" data-aos-duration="3000" src={heroimg || "/placeholder.svg"} alt="School Management" className="img-fluid" />
             </div>
           </div>
         </div>
@@ -198,7 +219,9 @@ const Home = () => {
                 <div className="d-flex justify-content-between align-items-center">
                   {logos.slice(rowIndex * 7, (rowIndex + 1) * 7).map((logo, index) => (
                     <div key={index}>
-                      <img
+                      <img data-aos="fade-up"
+                        data-aos-anchor-placement="bottom-center"
+                        data-aos-duration="1000"
                         src={logo || "/placeholder.svg"}
                         alt={`Logo ${rowIndex * 7 + index + 1}`}
                         className="img-fluid"
@@ -245,7 +268,9 @@ const Home = () => {
             </p>
           </div>
           <div className="col-12 col-md-6 text-center">
-            <img src={standent || "/placeholder.svg"} alt="School Management" className="img-fluid" />
+            <img data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="1000" src={standent || "/placeholder.svg"} alt="School Management" className="img-fluid" />
           </div>
         </div>
       </div>
@@ -307,10 +332,10 @@ const Home = () => {
                 <span className="float-end">
                   {activeIndex === index ? (
                     // <img src={minus || "/placeholder.svg"} alt="" style={{ width: "40px" }} />
-                    <i class="fa-solid fa-caret-up " style={{fontSize: "30px" }}></i>
+                    <i class="fa-solid fa-caret-up " style={{ fontSize: "30px" }}></i>
                   ) : (
                     // <img src={plus || "/placeholder.svg"} alt="" style={{ width: "40px" }} />
-                    <i class="fa-solid fa-caret-down" style={{fontSize: "30px" }}></i>
+                    <i class="fa-solid fa-caret-down" style={{ fontSize: "30px" }}></i>
                   )}
                 </span>
               </h5>

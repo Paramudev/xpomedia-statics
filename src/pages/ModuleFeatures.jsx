@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import img1 from "../assets/imgs/ModuleFeaturesimg/star-icon.png";
 
-const modules = ["Administration", "Admission","Transaction", "Transport", "Collection", "Payment", "Reports"];
+const modules = ["Administration", "Admission", "Transaction", "Transport", "Collection", "Payment", "Reports"];
 
 const moduleDetails = {
     Administration: {
@@ -84,7 +84,7 @@ const moduleDetails = {
 
         ]
     },
-    Transaction : {
+    Transaction: {
         title: "Transaction Management",
         description: "Seamless Financial Transactions for Institutional Efficiency",
         para: "The Transaction Management feature in XPO Media ERP ensures smooth handling of all financial transactions, from student fees to vendor payments. It provides a centralized platform for tracking, managing, and reconciling transactions, ensuring accuracy and transparency in financial operations.",
@@ -149,7 +149,7 @@ const moduleDetails = {
 
         ]
     },
-    Transport : {
+    Transport: {
         title: "Transport Management",
         description: "Safe and Efficient Transportation for Students and Staff",
         para: "The Transport Management feature in XPO Media ERP ensures seamless planning and monitoring of institutional transportation. It automates route mapping, vehicle tracking, and schedule management, enhancing safety and efficiency. This feature minimizes manual effort while ensuring timely and secure commutes for students and staff.",
@@ -193,20 +193,74 @@ const moduleDetails = {
                     "Analyze student density in different areas for better planning",
                     " Enhance decision-making with real-time location-based data"]
             },
-            
+
 
         ]
     },
     Collection: {
-        title: "Collection Module",
-        description: "Hassle-Free Fee Collection and Management",
-        para: "Automates and organizes school fee collections for better accuracy and transparency.",
+        title: "Collection Management",
+        description: "Streamlined Fee Collection for Hassle-Free Transactions",
+        para: "The Collection Management feature in XPO Media ERP ensures smooth handling of all institutional payments, including tuition fees, transport fees, and other charges. It provides real-time tracking, automated receipts, and detailed reports to enhance financial transparency and efficiency.",
         features: [
             {
-                title: "Automated Billing",
-                para: "Handles fee generation and collection.",
-                points: ["Generate invoices", "Online payment support", "Track overdue payments"]
+                title: "Tuition Fee",
+                para: "The Tuition Fee feature in XPO Media ERP ensures accurate management of academic fees, allowing institutions to automate fee collection, track payments, and generate real-time reports. It eliminates manual errors and enhances financial efficiency.",
+                points: [
+                    "Define and manage tuition fee structures for different courses",
+                    "Automate payment tracking and reminders for due fees",
+                    "Generate real-time reports on collected and pending fees",
+                    "Ensure seamless integration with overall financial management"
+                ]
             }
+        ],
+        paragarph: [
+            {
+                title: "Miscellaneous Fee  ",
+                para: "The Miscellaneous Fee feature enables institutions to manage non-tuition fees, such as extracurricular activity charges, lab fees, and examination fees. It ensures transparency and organized financial records.",
+                points: [
+                    "Track and manage all non-tuition-related fees",
+                    "Customize fee categories for different institutional services",
+                    "Automate invoice generation and payment collection",
+                    "Maintain clear financial records for better auditing"]
+            },
+            {
+                title: "Concession Account",
+                para: "The Concession Account feature simplifies the process of granting fee discounts, scholarships, and waivers. It ensures accurate concession tracking and seamless integration with the fee management system. ",
+                points: [
+                    "Manage student-wise fee concessions and scholarships",
+                    "Automate discount application for eligible students ",
+                    "Track financial impact and generate concession reports",
+                    "Reduce manual errors and maintain transparency"]
+            },
+            {
+                title: "Billwise Detail",
+                para: "The Billwise Detail feature categorizes fee transactions based on individual bills, ensuring structured and easy-to-track financial records for students and staff.",
+                points: [
+                    "Maintain detailed records of each bill and payment",
+                    "Track installment-wise and category-wise fee payments",
+                    "Generate bill-wise reports for auditing and reconciliation",
+                    "Improve financial transparency and reporting accuracy"]
+            },
+            {
+                title: "Receipt Details",
+                para: "The Receipt Details feature ensures all payments made to the institution are properly documented, allowing easy retrieval of receipts for students, parents, and staff.",
+                points: [
+                    "Generate digital and printed receipts instantly",
+                    "Track receipt history for quick reference and verification",
+                    "Ensure compliance with financial auditing standards",
+                    " Enhance user experience with seamless receipt retrieval"]
+            },
+            {
+                title: "Routewise Balance",
+                para: "The Routewise Balance feature helps institutions monitor outstanding and collected transportation fees based on specific bus routes, ensuring accurate financial tracking.",
+                points: [
+                    "Track fee collection and pending payments for each route",
+                    "Categorize balances based on student pick-up/drop locations    ",
+                    "Generate route-specific financial reports for better planning",
+                    "Ensure accurate reconciliation of transport fees"]
+            },
+
+
         ]
     },
     Payment: {
@@ -246,7 +300,7 @@ const ModuleFeatures = () => {
                     <h3 className="fw-bold text-md-center text-lg-center" style={{ color: "rgba(11, 61, 123, 1)", fontSize: "2rem" }}>
                         All-in-One Solution for Effortless School Administration!
                     </h3>
-                    <p className="text-secondary mx-auto pb-0" style={{ maxWidth: "800px",  lineHeight: "1.6" }}>
+                    <p className="text-secondary mx-auto pb-0" style={{ maxWidth: "800px", lineHeight: "1.6" }}>
                         "Simplify school operations with powerful modules for admissions, attendance, fees, transport, and more."
                     </p>
                 </div>
@@ -275,29 +329,29 @@ const ModuleFeatures = () => {
                     </div>
 
                     {/* Content Section */}
-                    <div className="col-9 ps-5">
+                    <div className="col-12 col-md-12 col-lg-9  px-md-5 px-3">
                         <div className="module-content">
-                            <h2 style={{ color: "rgba(11, 61, 123, 1)" }}>{moduleDetails[activeModule]?.title}</h2>
-                            <p className="text-muted fw-semibold">{moduleDetails[activeModule]?.description}</p>
+                            <h2 className="w-100 Mtittle ">{moduleDetails[activeModule]?.title}</h2>
+                            <h4 className="text-muted Mtittlel_2 fw-semibold">{moduleDetails[activeModule]?.description}</h4>
                             <p className="text-muted fw-semibold">{moduleDetails[activeModule]?.para}</p>
 
                             {moduleDetails[activeModule]?.features?.map((feature, index) => (
-                                <div key={index}>
-                                    <h3>{feature.title}</h3>
-                                    <p>{feature.para}</p>
-                                    <ul className="lh-lg mb-4">
+                                <div key={index} className="mb-4">
+                                    <h3 className="fw-bold">{feature.title}</h3>
+                                    <p className="text-muted">{feature.para}</p>
+                                    <ul className="list-unstyled  fast_contant lh-lg">
                                         {feature.points.map((point, i) => (
-                                            <li key={i} className="list-group-item">
-                                                <img src={img1} style={{ width: "30px" }} alt="" /> {point}
+                                            <li key={i} className="d-flex align-items-center">
+                                                <img src={img1} className="me-2 start_img" style={{ width: "24px", height: "24px" }} alt="" />
+                                                {point}
                                             </li>
                                         ))}
                                     </ul>
                                 </div>
                             ))}
-
-
                         </div>
                     </div>
+
 
 
 
