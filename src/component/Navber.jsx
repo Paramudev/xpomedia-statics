@@ -28,7 +28,7 @@ const Navbar = () => {
 
         {/* Navigation Links */}
         <div className="collapse Navber navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ms-5 ps-5 gap-4 text-start">
+          <ul className="navbar-nav ms-5 fw-medium ps-4 gap-4 text-start">
             <li className="nav-item">
               <Link className="nav-link" to="/">Home</Link>
             </li>
